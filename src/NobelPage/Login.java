@@ -20,10 +20,14 @@ public class Login {
 			driver.get("https://nobelpagedev.iworklab.com/");
 			driver.manage().window().maximize();
 			driver.findElement(By.xpath("//input[@placeholder='Enter Email']")).sendKeys("karannp2@yopmail.com");
-			driver.findElement(By.xpath("//input[@placeholder='Enter Password']")).sendKeys("Karan123@");
-			driver.findElement(By.id("exampleCheck1")).click();
-			driver.findElement(By.xpath("//button[normalize-space()='Login to NobelPage']")).click();
 			Thread.sleep(2000);
+			driver.findElement(By.xpath("//input[@placeholder='Enter Password']")).sendKeys("Karan123@");
+			Thread.sleep(2000);
+			driver.findElement(By.id("exampleCheck1")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.xpath("//button[normalize-space()='Login to NobelPage']")).click();
+			Thread.sleep(10000);
+			driver.close();
 			
 			
 		

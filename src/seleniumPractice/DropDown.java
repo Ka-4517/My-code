@@ -22,5 +22,6 @@ public class DropDown {
 		System.out.println(dropdown.getFirstSelectedOption().getText() + " : is selected from the static dropdown.");
 
 	}
+	
 
 }
